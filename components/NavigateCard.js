@@ -6,6 +6,7 @@ import { GOOGLE_MAPS_APIKEY } from "@env";
 import { setDestination } from '../slices/navSlice';
 import { useNavigation } from '@react-navigation/native';
 import { useDispatch } from 'react-redux';
+import NavFavourites from './NavFavourites';
 
 const NavigateCard = () => {
     const dispatch = useDispatch();
@@ -41,6 +42,7 @@ const NavigateCard = () => {
                         debounce={400}
                     />
                 </View>
+                <NavFavourites />
             </View>
         </View>
     );
