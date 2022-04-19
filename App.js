@@ -8,6 +8,8 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import GlobalStyles from './components/GlobalStyles'
+import { SafeAreaView } from 'react-native';
 
 const Stack = createStackNavigator();
 
